@@ -50,13 +50,12 @@ const Home = () => {
                 transition={{ duration: 0.2 }}
                 className="inline-block"
               >
-                <Link
-                  to="/#contact" // Link to the contact section
-                  onClick={handleScrollToContact} // Add smooth scroll handler
-                  className="block text-gray-300 hover:text-white transition-colors duration-200 bg-slate-600 text-3xl p-4 rounded-full"
-                >
-                  Request A Quote
-                </Link>
+ <Link
+  to="/contact" // Link to the contact page
+  className="block text-gray-300 hover:text-white transition-colors duration-200 bg-slate-600 text-3xl p-4 rounded-full"
+>
+  Request A Quote
+</Link>
               </motion.div>
             </motion.div>
           </div>
