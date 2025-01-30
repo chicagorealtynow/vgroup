@@ -154,12 +154,8 @@ const Navigation = () => {
             </Link>
           </li>
         </ul>
-        <a
-          href="tel:+14123905847"
-          className="hidden lg:block text-gray-300 hover:text-white transition-colors duration-200"
-        >
-          (412) 390-5847
-        </a>
+        {/* Replaced the link with a span to prevent phone number from being a link */}
+        <span className="hidden lg:block text-gray-300">(412) 390-5847</span>
       </div>
     </motion.nav>
   );
