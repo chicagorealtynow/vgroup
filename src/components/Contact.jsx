@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState(""); // Fixed typo
   const [message, setMessage] = useState("");
   const [statusMessage, setStatusMessage] = useState("");
 
@@ -21,13 +22,14 @@ const Contact = () => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    const serviceId = "service_your_service_id";
-    const templateId = "template_your_template_id";
-    const publicKey = "your_public_key";
+    const serviceId = "service_4bo2rn3";
+    const templateId = "template_cp398ff";
+    const publicKey = "BBYtF3WCEd-xfpJPT";
 
     const templateParams = {
       from_name: name,
       from_email: email,
+      from_phone: phone,
       message: message
     };
 
@@ -38,6 +40,7 @@ const Contact = () => {
         setStatusMessage("Message sent successfully!");
         setName("");
         setEmail("");
+        setPhone(""); // Fixed reference to correctly reset phone input
         setMessage("");
       })
       .catch(error => {
@@ -84,6 +87,19 @@ const Contact = () => {
               className="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
               value={email}
               onChange={e => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="phone" className="block text-gray-300 mb-1">
+              Phone Number
+            </label>
+            <input
+              type="tel" // Changed from "phone" to "tel" for better validation
+              id="phone"
+              className="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+              value={phone}
+              onChange={e => setPhone(e.target.value)}
               required
             />
           </div>
