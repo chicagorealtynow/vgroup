@@ -41,7 +41,7 @@ const Home = () => {
                 transition={{ duration: 0.2 }}
                 className="inline-block"
               >
-                <a href="/#contact">
+        <a href="/#contact">
                   <span className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-md transition-colors duration-300">
                     Request a Quote
                   </span>
