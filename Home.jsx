@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom"; // Import Link
 import About from "./About";
 import Testimonials from "./Testimonials";
 import Gallery from "./Gallery";
@@ -8,7 +9,15 @@ import Contact from "./Contact";
 const Home = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } }
+    visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } },
+  };
+
+  const handleScrollToContact = (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    const contactSection = document.querySelector("#contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to #contact
+    }
   };
 
   return (
@@ -19,7 +28,7 @@ const Home = () => {
           style={{
             backgroundImage: `url('https://images.pexels.com/photos/175039/pexels-photo-175039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
             backgroundSize: "cover",
-            backgroundPosition: "center"
+            backgroundPosition: "center",
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -41,19 +50,13 @@ const Home = () => {
                 transition={{ duration: 0.2 }}
                 className="inline-block"
               >
-  <a
-  href="#contact"
-  onClick={(e) => {
-    e.preventDefault(); // Prevent default anchor behavior
-    document.querySelector("#contact").scrollIntoView({
-      behavior: "smooth", // Smooth scroll
-    });
-  }}
->
-  <span className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-md transition-colors duration-300">
-    Request a Quote
-  </span>
-</a>
+                <Link
+                  to="/#contact" // Link to the contact section
+                  onClick={handleScrollToContact} // Add smooth scroll handler
+                  className="block text-gray-300 hover:text-white transition-colors duration-200 bg-slate-600 text-3xl p-4 rounded-full"
+                >
+                  Request A Quote
+                </Link>
               </motion.div>
             </motion.div>
           </div>
