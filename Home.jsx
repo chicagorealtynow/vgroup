@@ -44,7 +44,7 @@ const Home = () => {
                 className="inline-block"
               >
                 <Link
-                  to="/contact"
+                  to="/contactpage"
                   state={{ from: "home" }} // Optional: Pass state to the ContactPage
                   className="block text-gray-300 hover:text-white transition-colors duration-200 bg-slate-600 text-3xl p-4 rounded-full"
                 >
