@@ -1,14 +1,14 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import About from './About';
-import Testimonials from './Testimonials';
-import Gallery from './Gallery';
-import Contact from './Contact';
+import React from "react";
+import { motion } from "framer-motion";
+import About from "./About";
+import Testimonials from "./Testimonials";
+import Gallery from "./Gallery";
+import Contact from "./Contact";
 
 const Home = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } },
+    visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } }
   };
 
   return (
@@ -18,8 +18,8 @@ const Home = () => {
           className="w-full h-full"
           style={{
             backgroundImage: `url('https://images.pexels.com/photos/175039/pexels-photo-175039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundSize: "cover",
+            backgroundPosition: "center"
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -33,14 +33,15 @@ const Home = () => {
                 Welcome to VGroup Handyman Services
               </h1>
               <p className="text-lg text-gray-300 mb-8">
-                Your trusted partner for all your home repair and maintenance needs.
+                Your trusted partner for all your home repair and maintenance
+                needs.
               </p>
               <motion.div
-                whileHover={{ scale: 1.05, backgroundColor: '#4a5568' }}
+                whileHover={{ scale: 1.05, backgroundColor: "#4a5568" }}
                 transition={{ duration: 0.2 }}
                 className="inline-block"
               >
-                <a href="/contact">
+                <a href="/#contact">
                   <span className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-md transition-colors duration-300">
                     Request a Quote
                   </span>
