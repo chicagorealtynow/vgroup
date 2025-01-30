@@ -51,7 +51,7 @@ const Home = () => {
                 className="inline-block"
               >
  <Link
-  to="/contact" // Link to the contact page
+  to="/#contact" // Link to the contact page
   className="block text-gray-300 hover:text-white transition-colors duration-200 bg-slate-600 text-3xl p-4 rounded-full"
 >
   Request A Quote
