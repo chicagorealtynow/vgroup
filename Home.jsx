@@ -41,11 +41,19 @@ const Home = () => {
                 transition={{ duration: 0.2 }}
                 className="inline-block"
               >
-        <a href="/#contact">
-                  <span className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-md transition-colors duration-300">
-                    Request a Quote
-                  </span>
-                </a>
+  <a
+  href="#contact"
+  onClick={(e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    document.querySelector("#contact").scrollIntoView({
+      behavior: "smooth", // Smooth scroll
+    });
+  }}
+>
+  <span className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-md transition-colors duration-300">
+    Request a Quote
+  </span>
+</a>
               </motion.div>
             </motion.div>
           </div>
