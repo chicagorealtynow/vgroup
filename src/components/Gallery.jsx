@@ -5,28 +5,28 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 
 // Manually import each image
-import img1 from "/src/assets/images/1000011851.jpg";
-import img2 from "../assets/images/1000011854.jpg";
-import img3 from "../assets/images/1000011855.jpg";
-import img4 from "../assets/images/1000011861.jpg";
-import img5 from "../assets/images/1000011865.jpg";
-import img6 from "../assets/images/1000011868.jpg";
-import img7 from "../assets/images/1000011869.jpg";
-import img8 from "../assets/images/1000011871.jpg";
-import img9 from "../assets/images/1000011872.jpg";
-import img10 from "../assets/images/1000011875.jpg";
-import img11 from "../assets/images/1000011877.jpg";
-import img12 from "../assets/images/1000011882.jpg";
-import img13 from "../assets/images/1000011885.jpg";
-import img14 from "../assets/images/1000011886.jpg";
-import img15 from "../assets/images/1000011889.jpg";
-import img16 from "../assets/images/1000011890.jpg";
-import img17 from "../assets/images/1000011891.jpg";
-import img18 from "../assets/images/1000011892.jpg";
-import img19 from "../assets/images/1000011893.jpg";
-import img20 from "../assets/images/1000011894.jpg";
-import img21 from "../assets/images/1000011895.jpg";
-import img22 from "../assets/images/1000011896.jpg";
+import img1 from "/1000011851.jpg";
+import img2 from "/1000011854.jpg";
+import img3 from "/1000011855.jpg";
+import img4 from "/1000011861.jpg";
+import img5 from "/1000011865.jpg";
+import img6 from "/1000011868.jpg";
+import img7 from "/1000011869.jpg";
+import img8 from "/1000011871.jpg";
+import img9 from "/1000011872.jpg";
+import img10 from "/1000011875.jpg";
+import img11 from "/1000011877.jpg";
+import img12 from "/1000011882.jpg";
+import img13 from "/1000011885.jpg";
+import img14 from "/1000011886.jpg";
+import img15 from "/1000011889.jpg";
+import img16 from "/1000011890.jpg";
+import img17 from "/1000011891.jpg";
+import img18 from "/1000011892.jpg";
+import img19 from "/1000011893.jpg";
+import img20 from "/1000011894.jpg";
+import img21 from "/1000011895.jpg";
+import img22 from "/1000011896.jpg";
 
 const Gallery = () => {
   const containerVariants = {
