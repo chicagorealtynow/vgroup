@@ -35,18 +35,16 @@ const Home = () => {
                 Welcome to VGroup Handyman Services
               </h1>
               <p className="text-lg text-gray-300 mb-8">
-                Your trusted partner for all your home repair and maintenance
-                needs.
+              Your trusted partner for expert fence installation, street tiles and concrete patios, wooden terraces, and gazebo assembly.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05, backgroundColor: "#4a5568" }}
                 transition={{ duration: 0.2 }}
-                className="inline-block"
+                className="inline-block rounded-full overflow-hidden" // Add rounded-full and overflow-hidden
               >
                 <Link
-                  to="/contactpage"
-                  state={{ from: "home" }} // Optional: Pass state to the ContactPage
-                  className="block text-gray-300 hover:text-white transition-colors duration-200 bg-slate-600 text-3xl p-4 rounded-full"
+                  to="/contact" // Link to the ContactPage route
+                  className="block text-gray-300 hover:text-white transition-colors duration-200 bg-slate-600 hover:bg-slate-700 text-3xl p-4 rounded-full"
                 >
                   Request A Quote
                 </Link>
