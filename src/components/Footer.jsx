@@ -8,6 +8,7 @@ const Footer = () => {
         <p>
           <a href="/privacy-policy" className="text-gray-400 hover:text-gray-200">Privacy Policy</a> | <a href="/terms-of-service" className="text-gray-400 hover:text-gray-200">Terms of Service</a>
         </p>
+        <p>Phone:  (412) 390-5847  Email: v0935271808@gmail.com</p>
       </div>
     </footer>
   );
