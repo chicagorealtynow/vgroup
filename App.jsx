@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
-import ContactPage from "./components/ContactPage";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import Home from "./src/components/Home";
+import Services from "./src/components/Services";
+import Contact from "./src/components/Contact";
+import ContactPage from "./src/components/ContactPage";
+import Navigation from "./src/components/Navigation";
+import Footer from "./src/components/Footer";
 
 function App() {
   return (
