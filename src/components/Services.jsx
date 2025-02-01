@@ -19,26 +19,27 @@ const Services = () => {
 
   const services = [
     {
-      title: 'Plumbing',
-      description: 'Expert plumbing services for leaks, clogs, and installations.',
+      title: 'Fences',
+      description: 'Custom-built wooden and composite fences for privacy, security, and aesthetics.',
     },
     {
-      title: 'Electrical',
-      description: 'Reliable electrical repairs, installations, and upgrades.',
+      title: 'Street Tiles & Concrete Patios',
+      description: 'Durable and stylish paving solutions for driveways, walkways, and outdoor seating areas.',
     },
     {
-      title: 'Carpentry',
-      description: 'Professional carpentry services for repairs, installations, and custom projects.',
+      title: 'Wooden Terraces',
+      description: 'Beautifully crafted wooden terraces that expand your outdoor living space.',
     },
     {
-      title: 'Painting',
-      description: 'High-quality interior and exterior painting services.',
+      title: 'Gazebo Installation',
+      description: 'Elegant and sturdy gazebos for shade, relaxation, and outdoor gatherings.',
     },
     {
-      title: 'General Repairs',
-      description: 'Comprehensive handyman services for all your home repair needs.',
+      title: 'Garden & Vegetable Garden Enhancements',
+      description: 'Functional and inviting outdoor spaces designed for gardening and sustainability.',
     },
   ];
+  
 
   return (
     <motion.div

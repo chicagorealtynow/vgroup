@@ -1,13 +1,37 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import { motion } from 'framer-motion';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion";
+
+// Manually import each image
+import img1 from "../assets/images/1000011851.jpg";
+import img2 from "../assets/images/1000011854.jpg";
+import img3 from "../assets/images/1000011855.jpg";
+import img4 from "../assets/images/1000011861.jpg";
+import img5 from "../assets/images/1000011865.jpg";
+import img6 from "../assets/images/1000011868.jpg";
+import img7 from "../assets/images/1000011869.jpg";
+import img8 from "../assets/images/1000011871.jpg";
+import img9 from "../assets/images/1000011872.jpg";
+import img10 from "../assets/images/1000011875.jpg";
+import img11 from "../assets/images/1000011877.jpg";
+import img12 from "../assets/images/1000011882.jpg";
+import img13 from "../assets/images/1000011885.jpg";
+import img14 from "../assets/images/1000011886.jpg";
+import img15 from "../assets/images/1000011889.jpg";
+import img16 from "../assets/images/1000011890.jpg";
+import img17 from "../assets/images/1000011891.jpg";
+import img18 from "../assets/images/1000011892.jpg";
+import img19 from "../assets/images/1000011893.jpg";
+import img20 from "../assets/images/1000011894.jpg";
+import img21 from "../assets/images/1000011895.jpg";
+import img22 from "../assets/images/1000011896.jpg";
 
 const Gallery = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } },
+    visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } }
   };
 
   const settings = {
@@ -21,49 +45,38 @@ const Gallery = () => {
     responsive: [
       {
         breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
+        settings: { slidesToShow: 2 }
       },
       {
         breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+        settings: { slidesToShow: 1 }
+      }
+    ]
   };
 
   const images = [
-    "https://production-next-images-cdn.thumbtack.com/i/529675204387274760/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033395609894914/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033395720626191/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033395599106057/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033395402866696/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033394734276623/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033395811229698/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033395145482255/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033394722062349/width/1366.webp",
-     "https://production-next-images-cdn.thumbtack.com/i/529033390183432200/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033394768306185/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033394504712200/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033392930545677/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033392928702464/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033387993038861/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/529033385903218696/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/528050058326589465/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/526521930826874885/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/526521930931298305/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/526186539181137927/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/526186539214700551/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/526186372590379015/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/526186372596613131/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/525447750241435660/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/525447543980490764/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/525447544064253957/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/525447544014061580/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/525448003708682247/width/1366.webp",
-    "https://production-next-images-cdn.thumbtack.com/i/525448003649953799/width/1366.webp",
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+    img15,
+    img16,
+    img17,
+    img18,
+    img19,
+    img20,
+    img21,
+    img22
   ];
 
   return (
@@ -73,9 +86,11 @@ const Gallery = () => {
       animate="visible"
       className="container mx-auto px-4 py-20"
     >
-      <h2 className="text-3xl font-bold mb-8 text-center text-white">Gallery</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center text-white">
+        Gallery
+      </h2>
       <Slider {...settings}>
-        {images.map((image, index) => (
+        {images.map((image, index) =>
           <div key={index} className="px-2">
             <img
               src={image}
@@ -83,7 +98,7 @@ const Gallery = () => {
               className="w-full h-64 object-cover rounded-md"
             />
           </div>
-        ))}
+        )}
       </Slider>
     </motion.div>
   );
