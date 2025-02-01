@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 
 // Manually import each image
-import img1 from "../assets/images/1000011851.jpg";
+import img1 from "/src/assets/images/1000011851.jpg";
 import img2 from "../assets/images/1000011854.jpg";
 import img3 from "../assets/images/1000011855.jpg";
 import img4 from "../assets/images/1000011861.jpg";
