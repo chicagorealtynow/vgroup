@@ -38,6 +38,10 @@ const Services = () => {
       title: 'Garden & Vegetable Garden Enhancements',
       description: 'Functional and inviting outdoor spaces designed for gardening and sustainability.',
     },
+   {
+      title: 'Lawn Irrigation Systems and Planting of Lawn',
+      description: 'We program lawn irrigation system installation and planting of lawn services.',
+    },
   ];
   
 
